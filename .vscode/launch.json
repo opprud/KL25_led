@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/KL25F_DEBUG.elf",
+            "name": "Debug Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "serverpath": "/Applications/SEGGER/JLink_V784/JLinkGDBServer",
+            "armToolchainPath": "/Applications/MCUXpressoIDE_11.4.1_6260/ide/plugins/com.nxp.mcuxpresso.tools.macosx_11.4.0.202103011116/tools/bin/",
+            "device": "MKL25Z128xxx4",
+            "interface": "swd",
+            "serialNumber": "", // add J-Link serial number if having multiple attached the same time.
+            "runToMain": true,
+            "svdFile": "${workspaceRoot}/device/MKL25Z4.svd",
+
+        }
+    ]
+}
