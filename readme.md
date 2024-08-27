@@ -9,12 +9,14 @@ You need to install tools specified in the guide above
 - VS Code plugins
 
 ## Build targets
-First we need to generate makefiles using `CMake`, cd into to the `build` dir
+First we need to generate makefiles using `CMake`, from the projects root directory
 
-On OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja" -G "Ninja" ..`
+On OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja" -G "Ninja" .. -B build`
 
-On WIN: OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja.exe" -G "Ninja" ..`
+On WIN: OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja.exe" -G "Ninja" .. -B build`
 
+
+Then `cd` into to the `build` dir by typing `cd build`
 
 The we can build directly in the `build` dir using `Make` or `Ninja`
 
